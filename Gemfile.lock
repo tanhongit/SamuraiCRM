@@ -1,3 +1,9 @@
+PATH
+  remote: engines/core
+  specs:
+    samurai_core (0.0.1)
+      rails (~> 6.0.3, >= 6.0.3.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -205,6 +211,7 @@ DEPENDENCIES
   listen (~> 3.2)
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.2)
+  samurai_core!
   sass-rails (>= 6)
   selenium-webdriver
   spring

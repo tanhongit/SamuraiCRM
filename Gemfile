@@ -53,4 +53,6 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'core', path: 'core'
+# gem 'core', path: 'engines/core'
+
+gem 'samurai_core', path: 'engines/core'
