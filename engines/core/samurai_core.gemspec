@@ -1,12 +1,14 @@
-$:.push File.expand_path("lib", __dir__)
+# $:.push File.expand_path("lib", __dir__)
+$:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "core/version"
+# require "core/version"
+require "samurai/core/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |spec|
-  spec.name        = "core"
-  spec.version     = Core::VERSION
+  spec.name        = "samurai_core"
+  spec.version     = Samurai::Core::VERSION
   spec.authors     = ["tanhongit"]
   spec.email       = ["phuongtan12357nguyen@gmail.com"]
   spec.homepage    = "TODO"
@@ -28,4 +30,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rails", "~> 6.0.3", ">= 6.0.3.2"
 
   spec.add_development_dependency "sqlite3"
+
+  spec.test_files = Dir[""]
 end
