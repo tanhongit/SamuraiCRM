@@ -29,6 +29,10 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "rails", "~> 6.0.3", ">= 6.0.3.2"
 
+  spec.add_dependency 'sass-rails', ">= 6"
+  spec.add_dependency 'bootstrap-sass', "~> 3.3.3"
+  spec.add_dependency 'autoprefixer-rails', "~> 5.1.5"
+
   spec.add_development_dependency "sqlite3"
 
   spec.test_files = Dir[""]
