@@ -1,1 +1,1 @@
-//= link_directory ../stylesheets/core .css
+//= link_directory ../stylesheets/samurai .css
