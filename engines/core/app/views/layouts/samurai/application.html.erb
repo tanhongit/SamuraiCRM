@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Core</title>
-  <%= csrf_meta_tags %>
-  <%= csp_meta_tag %>
-
-  <%= stylesheet_link_tag    "core/application", media: "all" %>
+<title>Core</title>
+<%= stylesheet_link_tag "samurai/application", media: "all" %>
+<%= javascript_include_tag "samurai/application" %>
+<%= csrf_meta_tags %>
 </head>
 <body>
-
 <%= yield %>
-
 </body>
 </html>
