@@ -1,5 +1,5 @@
 # $:.push File.expand_path("lib", __dir__)
-$:.push File.expand_path("../lib", __FILE__)
+$:.push File.expand_path("../lib", __dir__)
 
 # Maintain your gem's version:
 # require "core/version"
