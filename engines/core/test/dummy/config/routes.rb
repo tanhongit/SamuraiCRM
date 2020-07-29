@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  mount Core::Engine => "/core"
+  mount Samurai::Core::Engine => "/", as: 'samurai'
 end
