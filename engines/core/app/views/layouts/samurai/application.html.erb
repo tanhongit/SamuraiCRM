@@ -9,12 +9,28 @@
 </head>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <%= link_to 'SamuraiCRM', samurai.root_path, class: 'navbar-brand' %>
-      </div>
-    </div>
-  </nav>
+<div class="container">
+<div class="navbar-header">
+<%= link_to 'SamuraiCRM', samurai.root_path, class: 'navbar-brand' %>
+</div>
+<%- if current_user %>
+<div class="navbar-collapse collapse" id="navbar">
+<ul class="nav navbar-nav">
+<li>
+<%= link_to 'Home', samurai.root_path %>
+</li>
+<li>
+<%= link_to 'My Account', samurai.edit_user_registration_path %>
+</li>
+<li>
+<%= link_to 'Logout', samurai.destroy_user_session_path,
+method: :delete %>
+</li>
+</ul>
+</div>
+<% end %>
+</div>
+</nav>
   <div class='container' role='main'>
     <div class='jumbotron'>
       <%= yield %>
