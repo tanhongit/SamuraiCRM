@@ -35,5 +35,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'autoprefixer-rails', "~> 5.1.5"
   spec.add_dependency 'devise'
 
-  spec.add_development_dependency "sqlite3"
+  spec.add_development_dependency "postgresql"
 end
