@@ -8,6 +8,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= yield %>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <%= link_to 'SamuraiCRM', samurai.root_path, class: 'navbar-brand' %>
+    </div>
+  </div>
+</nav>
+<div class='container' role='main'>
+  <div class='jumbotron'>
+    <%= yield %>
+  </div>
+</div>
 </body>
 </html>
