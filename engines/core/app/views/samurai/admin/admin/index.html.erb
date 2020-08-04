@@ -1,11 +1,6 @@
 <!-- SamuraiCRM/engines/core/app/views/samurai/admin/admin/index.html.erb -->
 <h2 class='pull-left'>Admin</h2>
-<ul class="nav nav-pills navbar-right">
-<li role="presentation" class="<%= active(samurai.admin_path) %>">
-<%= link_to 'Dashboard', samurai.admin_path %>
-</li>
-</ul>
-<div class='clearfix'></div>
+<%= render 'samurai/admin/shared/nav' %>
 <hr>
 <div class="row">
 <div class="col-md-6">
