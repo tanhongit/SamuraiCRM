@@ -16,6 +16,9 @@
   </div>
 </nav>
 <div class='container' role='main'>
+  <% flash.each do |key, value| %>
+    <div class="<%= flash_class(key.to_sym) %>"><%= value %></div>
+  <% end %>
   <div class='jumbotron'>
     <%= yield %>
   </div>
