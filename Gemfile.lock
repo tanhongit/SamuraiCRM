@@ -2,11 +2,12 @@ PATH
   remote: engines/core
   specs:
     samurai_core (0.0.1)
-      autoprefixer-rails (~> 9.7.3)
-      bootstrap-sass (~> 3.4.1)
-      devise (~> 4.7.1)
+      autoprefixer-rails
+      bootstrap-sass
+      cancan
+      devise
       rails (~> 6.0.3, >= 6.0.3.2)
-      sass-rails (>= 6)
+      sass-rails
 
 GEM
   remote: https://rubygems.org/
@@ -79,6 +80,7 @@ GEM
       sassc (>= 2.0.0)
     builder (3.2.4)
     byebug (11.1.3)
+    cancan (1.6.10)
     capybara (3.33.0)
       addressable
       mini_mime (>= 0.1.3)
@@ -88,7 +90,7 @@ GEM
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
     childprocess (3.0.0)
-    concurrent-ruby (1.1.6)
+    concurrent-ruby (1.1.7)
     crass (1.0.6)
     devise (4.7.2)
       bcrypt (~> 3.0)
