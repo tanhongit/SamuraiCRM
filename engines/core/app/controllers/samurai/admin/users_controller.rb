@@ -2,7 +2,7 @@ module Samurai
     module Admin
         class UsersController < AdminController
             def index
-                @users = Samurai::User.ordered
+                @users = Samurai::Core::User.ordered
             end
         end
     end

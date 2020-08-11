@@ -1,7 +1,7 @@
 module Samurai
   module Core
     class Engine < ::Rails::Engine
-      isolate_namespace Core
+      isolate_namespace Samurai
 
       paths["app/views"] << "app/views/samurai"
 
