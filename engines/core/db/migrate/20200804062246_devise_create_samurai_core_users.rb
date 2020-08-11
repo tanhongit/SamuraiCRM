@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-class DeviseCreateSamuraiCoreUsers < ActiveRecord::Migration[5.1]
+class DeviseCreateSamuraiUsers < ActiveRecord::Migration[5.1]
   def change
-    create_table :samurai_core_users do |t|
+    create_table :samurai_users do |t|
       ## Database authenticatable
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
@@ -36,9 +36,9 @@ class DeviseCreateSamuraiCoreUsers < ActiveRecord::Migration[5.1]
       t.timestamps null: false
     end
 
-    add_index :samurai_core_users, :email,                unique: true
-    add_index :samurai_core_users, :reset_password_token, unique: true
-    # add_index :samurai_core_users, :confirmation_token,   unique: true
-    # add_index :samurai_core_users, :unlock_token,         unique: true
+    add_index :samurai_users, :email,                unique: true
+    add_index :samurai_users, :reset_password_token, unique: true
+    # add_index :samurai_users, :confirmation_token,   unique: true
+    # add_index :samurai_users, :unlock_token,         unique: true
   end
 end
