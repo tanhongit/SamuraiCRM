@@ -1,5 +1,5 @@
-module Samurai::Core
-  class User < ActiveRecord::Base
+module Samurai
+  class User < ApplicationRecord
       # Include default devise modules. Others available are:
       # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
       devise  :database_authenticatable, :registerable,

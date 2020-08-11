@@ -20,10 +20,12 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: postgres
+  password: 1974
 
 development:
   <<: *default
-  database: SamuraiCRM_development
+  database: SamuraiCRM
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -81,5 +83,3 @@ test:
 production:
   <<: *default
   database: SamuraiCRM_production
-  username: SamuraiCRM
-  password: <%= ENV['SAMURAICRM_DATABASE_PASSWORD'] %>
