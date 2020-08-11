@@ -1,7 +1,9 @@
 module Samurai
   module Core
     class Engine < ::Rails::Engine
-      isolate_namespace Core
+      isolate_namespace Samurai
+
+      paths["app/views"] << "app/views/samurai"
 
       initializer :append_migrations do |app|
         unless app.root.to_s.match(root.to_s)
