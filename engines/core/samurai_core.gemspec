@@ -26,15 +26,19 @@ Gem::Specification.new do |spec|
   # end
 
   spec.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
-  spec.test_files = Dir[""]
+  spec.test_files = Dir["test/**/*"]
   spec.add_dependency "rails", "~> 6.0.3", ">= 6.0.3.2"
 
-  spec.add_dependency 'sass-rails', ">= 6"
-  spec.add_dependency 'bootstrap-sass', "~> 3.4.1"
-  spec.add_dependency 'autoprefixer-rails', "~> 9.7.3"
-  spec.add_dependency 'devise', '~> 4.7.1'
+  spec.add_dependency 'sass-rails'
+  spec.add_dependency 'bootstrap-sass'
+  spec.add_dependency 'autoprefixer-rails'
+  spec.add_dependency 'devise'
+  spec.add_dependency 'cancan'
 
   spec.add_development_dependency "sqlite3"
-
- 
+  #Rspec
+  spec.add_development_dependency 'rspec-rails'
+  spec.add_development_dependency 'factory_bot_rails'
+  spec.add_development_dependency 'faker'
+  spec.add_development_dependency 'database_cleaner'
 end
