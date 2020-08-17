@@ -57,3 +57,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # SamuraiCRM
 gem 'samurai_core', path: 'engines/core'
+
+gem 'wdm'
