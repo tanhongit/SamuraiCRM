@@ -1,5 +1,5 @@
 module Samurai::Contacts
-  class Contact < ActiveRecord::Base
+  class Contact < ApplicationRecord
     belongs_to :user
 
     scope :ordered, -> { order('created_at desc') }
