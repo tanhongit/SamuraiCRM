@@ -8,6 +8,12 @@
       <span class="badge"><%= Samurai::User.count %></span>
     <% end %>
   </li>
+  <li role="presentation" class="<%= active(samurai.admin_tasks_path) %>">
+    <%= link_to samurai.admin_tasks_path do %>
+      Tasks
+      <span class="badge"><%= Samurai::Tasks::Task.count %></span>
+    <% end %>
+  </li>
   <li role="presentation" class="<%= active(samurai.admin_contacts_path) %>">
     <%= link_to samurai.admin_contacts_path do %>
       Contacts
