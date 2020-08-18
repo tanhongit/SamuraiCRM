@@ -1,5 +1,5 @@
 module Samurai::Tasks
-  class ApplicationRecord < ApplicationRecord
+  class ApplicationRecord < ActiveRecord::Base
     self.abstract_class = true
   end
 end
