@@ -59,4 +59,4 @@ gem 'deface' # We will use it soon
 # SamuraiCRM
 gem 'samurai_core', path: 'engines/core'
 gem 'samurai_contacts', path: 'engines/contacts'
-
+gem 'samurai_tasks', path: 'engines/tasks'
