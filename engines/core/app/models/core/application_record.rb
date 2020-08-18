@@ -1,5 +1,5 @@
 module Core
-  class ApplicationRecord < ApplicationController
+  class ApplicationRecord < ActiveRecord::Base
     self.abstract_class = true
   end
 end
