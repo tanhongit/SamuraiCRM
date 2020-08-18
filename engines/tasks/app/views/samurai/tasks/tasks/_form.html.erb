@@ -4,12 +4,12 @@
     <% if @task.errors.any? %>
       <div id="error_explanation">
         <h2>
-        <%= pluralize(@task.errors.count, "error") %>
-        prohibited this task from being saved:</h2>
+          <%= pluralize(@task.errors.count, "error") %>
+          prohibited this task from being saved:</h2>
         <ul>
-        <% @task.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-        <% end %>
+          <% @task.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
         </ul>
       </div>
     <% end %>
@@ -22,11 +22,10 @@
       <%= f.text_area :content, class: "form-control" %>
     </div>
     <div class="form-group">
-        <%= f.label :user_id, class: "control-label" %>
-        <%= f.select :user_id, Samurai::User.all.collect { |p| [ p.email, p.id ] },
+      <%= f.label :user_id, class: "control-label" %>
+      <%= f.select :user_id, Samurai::User.all.collect { |p| [ p.email, p.id ] },
         { selected: current_user.id }, class: "form-control" %>
     </div>
-
     <%- if Samurai::Core.available?(:contacts) %>
       <div class="form-group">
         <%= f.label :contact_id, class: "control-label" %>
