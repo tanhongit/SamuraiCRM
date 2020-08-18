@@ -7,8 +7,8 @@ module Samurai::Contacts
 
     # GET /contacts
     def index
-      @contacts = Contact.all
-      # @contacts = current_user.contacts
+      # @contacts = Contact.all
+      @contacts = current_user.contacts
     end
 
     # GET /contacts/1
@@ -22,6 +22,7 @@ module Samurai::Contacts
 
     # GET /contacts/1/edit
     def edit
+      authorize! :manage, nil
     end
 
     # POST /contacts
@@ -48,6 +49,7 @@ module Samurai::Contacts
 
     # DELETE /contacts/1
     def destroy
+      authorize! :manage, nil
       @contact.destroy
       # Add samurai to access the correct path
       redirect_to samurai.contacts_url, notice: 'Contact was successfully destroyed.'
