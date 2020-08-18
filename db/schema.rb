@@ -10,7 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_29_161625) do
+ActiveRecord::Schema.define(version: 2020_08_04_160050) do
+
+  create_table "samurai_contacts_contacts", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "company"
+    t.string "email"
+    t.string "phone"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_samurai_contacts_contacts_on_user_id"
+  end
 
   create_table "samurai_users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -25,4 +37,5 @@ ActiveRecord::Schema.define(version: 2020_07_29_161625) do
     t.index ["reset_password_token"], name: "index_samurai_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "samurai_contacts_contacts", "samurai_users", column: "user_id"
 end

@@ -54,8 +54,9 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # gem 'core', path: 'engines/core'
-
+gem 'modular_engine'
+gem 'deface' # We will use it soon
 # SamuraiCRM
 gem 'samurai_core', path: 'engines/core'
+gem 'samurai_contacts', path: 'engines/contacts'
 
-gem 'wdm'
