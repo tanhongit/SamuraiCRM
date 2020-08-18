@@ -55,7 +55,7 @@ production:
   database: rails6_samurai_crm_production
 ```
 
-You must change the **username, password and database** name accordingly!
+You must change the **username, password and database name** accordingly!
 
 ### 4.5. run rails db:migrate
 
@@ -63,9 +63,20 @@ You must change the **username, password and database** name accordingly!
 $ rails db:migrate
 ```
 
-If you get an error: "**LoadError: cannot load such file -- autoprefixer-rails**". Try running the install command below in the console screen:
+After running the above command, if you get an error: "**LoadError: cannot load such file -- autoprefixer-rails**", try running the install command below in the console screen:
 
 ```
 $ gem install autoprefixer-rails
 ```
+
+Then run the "**rails db:migrate**" command again.
+
+
+### 4.6. Run server 
+
+```
+$ rails s
+```
+
+Now, go to http://localhost:3000/
 
