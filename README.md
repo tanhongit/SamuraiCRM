@@ -80,3 +80,23 @@ $ rails s
 
 Now, go to http://localhost:3000/
 
+### 4.6. Create new user
+
+http://localhost:3000/users/sign_up and create a new user account.
+
+### 4.6. Set the user to admin
+
+Open new terminal and run:
+
+```
+$ rails c
+```
+
+Paste this command line and run
+
+```
+Samurai::User.first.update_column :admin, true
+```
+
+Now go to http://localhost:3000/admin and login your account.
+
