@@ -1,5 +1,5 @@
 module Samurai::Tasks
-  class Task < ApplicationRecord
+  class Task < ApplicationRecord::Base
     belongs_to :user
 
     if Samurai::Core.available?(:contacts)
