@@ -1,4 +1,4 @@
-class CreateSamuraiContactsContacts < ActiveRecord::Migration[5.1]
+class CreateSamuraiContactsContacts < ActiveRecord::Migration[6.0]
   def change
     create_table :samurai_contacts_contacts do |t|
       t.string :first_name

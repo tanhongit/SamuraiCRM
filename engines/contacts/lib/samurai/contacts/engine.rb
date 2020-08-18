@@ -12,7 +12,11 @@ module Samurai
         end
       end
     
-      
+      config.to_prepare do
+        Dir.glob(Engine.root.join("app", "decorators", "**", "*_decorator*.rb")) do |c|
+          Rails.configuration.cache_classes ? require(c) : load(c)
+        end
+      end
     
     end
   
