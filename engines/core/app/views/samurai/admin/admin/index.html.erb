@@ -1,15 +1,12 @@
 <h2 class='pull-left'>Admin</h2>
 <%= render 'admin/shared/nav' %>
 <hr>
-
 <div class="row">
   <div class="col-md-6">
     <div class="panel panel-primary">
-
       <div class="panel-heading">
         Last 3 Users
       </div>
-
       <table class="table">
         <thead>
           <th>ID</th>
@@ -26,11 +23,37 @@
           <% end %>
         </tbody>
       </table>
-
       <div class="panel-body text-center">
         <%= link_to '...', samurai.admin_users_path %>
       </div>
-
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        Last 3 Contacts
+      </div>
+      <table class="table">
+        <thead>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Created on</th>
+        </thead>
+        <tbody>
+          <%- Samurai::Contacts::Contact.ordered.limit(3).each do |contact| %>
+            <tr>
+              <td><%= contact.id %></td>
+              <td><%= contact.first_name %> <%= contact.last_name %></td>
+              <td><%= contact.email %></td>
+              <td><%= contact.created_at.strftime("%d %b. %Y") %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+      <div class="panel-body text-center">
+        <%= link_to '...', samurai.admin_users_path %>
+      </div>
     </div>
   </div>
 </div>

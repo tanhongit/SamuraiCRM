@@ -8,5 +8,11 @@
       <span class="badge"><%= Samurai::User.count %></span>
     <% end %>
   </li>
+  <li role="presentation" class="<%= active(samurai.admin_contacts_path) %>">
+    <%= link_to samurai.admin_contacts_path do %>
+      Contacts
+      <span class="badge"><%= Samurai::Contacts::Contact.count %></span>
+    <% end %>
+  </li>
 </ul>
 <div class='clearfix'></div>
