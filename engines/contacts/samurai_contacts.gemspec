@@ -20,5 +20,5 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "~> 6.0.3", ">= 6.0.3.2"
   s.add_dependency "samurai_core"
   s.add_dependency "deface"
-  s.add_development_dependency "sqlite3"
+  s.add_development_dependency "postgresql"
 end
