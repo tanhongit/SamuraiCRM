@@ -127,3 +127,4 @@ Samurai::User.first.update_column :admin, true
 
 Now go to http://localhost:3000/admin and login your account.
 
+See also: Samurai version using rails 5.1.7 in combination with ruby ​​2.6.3: [SamuraiCRM_ruby2_6_3_rails5_1_7](https://github.com/TanHongIT/SamuraiCRM/tree/master/SamuraiCRM_ruby2_6_3_rails5_1_7)
