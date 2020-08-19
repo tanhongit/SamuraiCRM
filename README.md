@@ -1,3 +1,22 @@
+# Welcome to SamuraiCRM Rails 6 by TANHONGIT
+
+It’s not super long but comes with a lot of ‘underground’ information about engines. If you’re
+about to write a modular application, then you should definitely read it.
+
+The goal is to teach you how to build your own modules and at the end of the road, create
+complete modular applications.
+
+# Demo
+
+You can try it at https://railssamuraicrm.herokuapp.com/
+
+> **_Account login on Backend_**
+
+```
+user :
+    username: admin@gmail.com     | password: 123456
+```
+
 # 1. Technology
 - Ruby on Rails
 
