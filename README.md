@@ -1,3 +1,11 @@
+# 1. Technology
+- Ruby on Rails
+
+# 2. Configuration requirements
+We are going to build the web application using:
+- Rails 6.0.3.2
+- Ruby 2.7.1
+
 # 4. Runing
 
 ### 4.1. Clone Repo
