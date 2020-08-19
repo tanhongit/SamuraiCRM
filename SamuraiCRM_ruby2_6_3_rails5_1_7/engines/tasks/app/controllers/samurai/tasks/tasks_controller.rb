@@ -16,6 +16,7 @@ module Samurai::Tasks
     def new
       @task = Task.new
     end
+
     def edit
       authorize! :manage, nil
     end
@@ -44,14 +45,15 @@ module Samurai::Tasks
     end
 
     private
-      # Use callbacks to share common setup or constraints between actions.
-      def set_task
-        @task = Task.find(params[:id])
-      end
 
-      # Only allow a trusted parameter "white list" through.
-      def task_params
-        params.require(:task).permit(:title, :content, :user_id, :contact_id)
-      end
+    # Use callbacks to share common setup or constraints between actions.
+    def set_task
+      @task = Task.find(params[:id])
+    end
+
+    # Only allow a trusted parameter "white list" through.
+    def task_params
+      params.require(:task).permit(:title, :content, :user_id, :contact_id)
+    end
   end
 end

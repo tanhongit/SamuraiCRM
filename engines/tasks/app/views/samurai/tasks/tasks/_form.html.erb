@@ -23,14 +23,14 @@
     </div>
     <div class="form-group">
       <%= f.label :user_id, class: "control-label" %>
-      <%= f.select :user_id, Samurai::User.all.collect { |p| [ p.email, p.id ] },
-        { selected: current_user.id }, class: "form-control" %>
+      <%= f.select :user_id, Samurai::User.all.collect { |p| [p.email, p.id] },
+                   {selected: current_user.id}, class: "form-control" %>
     </div>
     <%- if Samurai::Core.available?(:contacts) %>
       <div class="form-group">
         <%= f.label :contact_id, class: "control-label" %>
-        <%= f.select :contact_id, Samurai::Contacts::Contact.all.collect { |p| [ p.email, p.id ] },
-        { allow_blank: true }, class: "form-control" %>
+        <%= f.select :contact_id, Samurai::Contacts::Contact.all.collect { |p| [p.email, p.id] },
+                     {allow_blank: true}, class: "form-control" %>
       </div>
     <% end %>
   </div>

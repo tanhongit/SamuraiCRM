@@ -1,9 +1,9 @@
 Samurai::Admin::AdminController.class_eval do
-	before_action :set_contacts, only: :index
+  before_action :set_contacts, only: :index
 
-	private
+  private
 
-	def set_contacts
-	  @contacts = Samurai::Contacts::Contact.ordered.limit(3)
-	end
-  end 
+  def set_contacts
+    @contacts = Samurai::Contacts::Contact.ordered.limit(3)
+  end
+end

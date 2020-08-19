@@ -6,7 +6,7 @@ module Samurai
     rescue_from CanCan::AccessDenied do |exception|
       render :file => "samurai/static/403.html", :status => 403, :layout => false
     end
-    
+
     def current_ability
       @current_ability ||= Samurai::Ability.new(current_user)
     end

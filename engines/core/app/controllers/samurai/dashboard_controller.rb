@@ -3,8 +3,8 @@ module Samurai
     # before_action class: false
 
     def index
-      
+
     end
-    
+
   end
 end

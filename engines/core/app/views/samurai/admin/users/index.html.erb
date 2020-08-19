@@ -8,20 +8,20 @@
   </div>
   <table class="table">
     <thead>
-      <th>ID</th>
-      <th>Email</th>
-      <th>Signed Up</th>
-      <th>Admin?</th>
+    <th>ID</th>
+    <th>Email</th>
+    <th>Signed Up</th>
+    <th>Admin?</th>
     </thead>
     <tbody>
-      <%- @users.ordered.each do |user| %>
-        <tr>
-          <td><%= user.id %></td>
-          <td><%= user.email %></td>
-          <td><%= user.created_at.strftime("%d %b. %Y") %></td>
-          <td><%= user.admin? %></td>
-        </tr>
-      <% end %>
+    <%- @users.ordered.each do |user| %>
+      <tr>
+        <td><%= %></td>
+        <td><%= %></td>
+        <td><%= %></td>
+        <td><%= %></td>
+      </tr>
+    <% end %>
     </tbody>
   </table>
 </div>

@@ -27,7 +27,7 @@ module Samurai::Tasks
     # POST /tasks
     def create
       @task = Task.new(task_params)
-     # @task.user = current_user
+      # @task.user = current_user
       if @task.save
         redirect_to @task, notice: 'Task was successfully created.'
       else
@@ -52,14 +52,15 @@ module Samurai::Tasks
     end
 
     private
-      # Use callbacks to share common setup or constraints between actions.
-      def set_task
-        @task = Task.find(params[:id])
-      end
 
-      # Only allow a trusted parameter "white list" through.
-      def task_params
-        params.require(:task).permit(:title, :content, :user_id, :contact_id)
-      end
+    # Use callbacks to share common setup or constraints between actions.
+    def set_task
+      @task = Task.find(params[:id])
+    end
+
+    # Only allow a trusted parameter "white list" through.
+    def task_params
+      params.require(:task).permit(:title, :content, :user_id, :contact_id)
+    end
   end
 end

@@ -56,15 +56,16 @@ module Samurai::Contacts
     end
 
     private
-      # Use callbacks to share common setup or constraints between actions.
-      def set_contact
-        @contact = Contact.find(params[:id])
-      end
 
-      # Only allow a trusted parameter "white list" through.
-      def contact_params
-       # Add the parameters we allow
-        params.require(:contact).permit(:first_name, :last_name, :company, :email, :phone, :user_id)
-      end
+    # Use callbacks to share common setup or constraints between actions.
+    def set_contact
+      @contact = Contact.find(params[:id])
+    end
+
+    # Only allow a trusted parameter "white list" through.
+    def contact_params
+      # Add the parameters we allow
+      params.require(:contact).permit(:first_name, :last_name, :company, :email, :phone, :user_id)
+    end
   end
 end

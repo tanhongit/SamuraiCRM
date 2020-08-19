@@ -17,7 +17,7 @@ module Samurai
           end
         end
       end
-      
+
     end
   end
 end

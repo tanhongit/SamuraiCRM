@@ -1,10 +1,10 @@
 module Samurai
-    module Admin
+  module Admin
     class UsersController < AdminController
-            def index
-                authorize! :manage, nil
-                @users = Samurai::User.ordered
-            end
-        end
+      def index
+        authorize! :manage, nil
+        @users = Samurai::User.ordered
+      end
     end
+  end
 end
