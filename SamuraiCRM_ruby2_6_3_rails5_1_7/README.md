@@ -25,6 +25,17 @@ We are going to build the web application using:
 - Rails 5.1.7
 - Ruby 2.6.3
 
+
+# 3. Feature
+
+```
+1. Login, Logout, register
+2. User manager
+3. Create contact for user
+4. Contact manager 
+5. Task manager 
+```
+
 # 4. Runing
 
 ### 4.1. Download Repo
