@@ -6,6 +6,10 @@ about to write a modular application, then you should definitely read it.
 The goal is to teach you how to build your own modules and at the end of the road, create
 complete modular applications.
 
+Modular applications offer a different way to work on your application. Since you're focusing on building small reusable components instead of one big application, adding or removing features become easier.
+
+By having a set of components, we could have multiple applications sharing some features but also having their own specificities.
+
 # Demo
 
 You can try it at https://railssamuraicrm.herokuapp.com/
