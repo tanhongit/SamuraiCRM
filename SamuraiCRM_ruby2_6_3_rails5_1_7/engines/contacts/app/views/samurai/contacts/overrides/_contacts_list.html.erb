@@ -5,20 +5,20 @@
     </div>
     <table class="table">
       <thead>
-      <th>ID</th>
-      <th>Name</th>
-      <th>Email</th>
-      <th>Created On</th>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Created On</th>
       </thead>
       <tbody>
-      <%- @contacts.each do |contact| %>
-        <tr>
-          <td><%= %></td>
-          <td><%= %> <%= %></td>
-          <td><%= %></td>
-          <td><%= %></td>
-        </tr>
-      <% end %>
+        <%- @contacts.each do |contact| %>
+          <tr>
+            <td><%= contact.id %></td>
+            <td><%= contact.first_name %> <%= contact.last_name %></td>
+            <td><%= contact.email %></td>
+            <td><%= contact.created_at.strftime("%d %b. %Y") %></td>
+          </tr>
+        <% end %>
       </tbody>
     </table>
     <div class="panel-body text-center">

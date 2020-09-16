@@ -26,7 +26,7 @@ user :
 
 # 2. Configuration requirements
 We are going to build the web application using:
-- Rails 6.0.3.2
+- Rails 6.0.3.3
 - Ruby 2.7.1
 
 # 3. Feature

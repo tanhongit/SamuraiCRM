@@ -9,18 +9,18 @@
       </div>
       <table class="table">
         <thead>
-        <th>ID</th>
-        <th>Email</th>
-        <th>Signed Up</th>
+          <th>ID</th>
+          <th>Email</th>
+          <th>Signed Up</th>
         </thead>
         <tbody>
-        <%- Samurai::User.ordered.limit(3).each do |user| %>
-          <tr>
-            <td><%= %></td>
-            <td><%= %></td>
-            <td><%= %></td>
-          </tr>
-        <% end %>
+          <%- Samurai::User.ordered.limit(3).each do |user| %>
+            <tr>
+              <td><%= user.id %></td>
+              <td><%= user.email %></td>
+              <td><%= user.created_at.strftime("%d %b. %Y") %></td>
+            </tr>
+          <% end %>
         </tbody>
       </table>
       <div class="panel-body text-center">

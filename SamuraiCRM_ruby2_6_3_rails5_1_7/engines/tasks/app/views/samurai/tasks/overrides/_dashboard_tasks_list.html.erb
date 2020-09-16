@@ -5,20 +5,20 @@
     </div>
     <table class="table">
       <thead>
-      <th>ID</th>
-      <th>Title</th>
-      <th>Content</th>
-      <th>Created On</th>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Created On</th>
       </thead>
       <tbody>
-      <%- current_user.tasks.limit(3).each do |task| %>
-        <tr>
-          <td><%= %></td>
-          <td><%= %></td>
-          <td><%= %></td>
-          <td><%= %></td>
-        </tr>
-      <% end %>
+        <%- current_user.tasks.limit(3).each do |task| %>
+          <tr>
+            <td><%= task.id %></td>
+            <td><%= task.title %></td>
+            <td><%= task.content %></td>
+            <td><%= task.created_at.strftime("%d %b. %Y") %></td>
+          </tr>
+        <% end %>
       </tbody>
     </table>
     <div class="panel-body text-center">
